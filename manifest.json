@@ -1,0 +1,32 @@
+{
+
+  "manifest_version": 2,
+  "name": "recap decrap",
+  "version": "1.0",
+
+  "description": "Recap and chill",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+  "permissions": [
+      "activeTab",
+      "contextMenus"
+  ],
+
+  "background": {
+      "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.campus.recap.ncl.ac.uk/*"],
+      "js": ["borderify.js"]
+    }
+  ],
+"applications": {
+  "gecko": {
+    "id": "recap-decrap@cub3d.pw"
+  }
+}
+}

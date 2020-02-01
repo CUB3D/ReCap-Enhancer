@@ -5,9 +5,4 @@ function setPlaybackSpeed(speed) {
     document.getElementById("primaryVideo").playbackRate = speed;
 }
 
-function hideSideBar() {
-}
-
-
-
 
